@@ -7,7 +7,7 @@ const resetButton = document.getElementById('reset-button');
 
 const API_KEY="YOUR_API_KEY"; // get your api key from https://aistudio.google.com/apikey
 const genAI = new GoogleGenerativeAI(API_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 let chatSession;
 async function initChat() {
